@@ -6,6 +6,9 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
+    "bin": {
+        "vine-metadata": "cli.js"
+    },
     "author": "Syd Lambert",
     "license": "ISC",
     "repository": {

@@ -29,7 +29,9 @@ module.exports=location=>new Promise((resolve,reject)=>{
 
         res.on("end",()=>{
             try{
-                resolve(JSON.parse(data));
+                resolve(Object.assign(JSON.parse(data),{
+                    videoId:videoId,
+                }));
             }
             catch(e){
                 reject(e);
