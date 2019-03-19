@@ -65,7 +65,11 @@ This example will return the following object:
 `vineMetadata` will throw an exception if the video location is supplied in an invalid/unsupported format, or if the video does not exist. It can also throw network errors, or a JSON parse error if Vine supplies the data in an invalid format.
 
 ### CLI
-This module also comes with a CLI component. It can be used either with an argument:
+This module also comes with a CLI component. Install globally with:
+```sh
+npm install --global vine-metadata
+```
+You can use the CLI with either an argument:
 ```sh
 vine-metadata eF1z2H2U01e
 ```
